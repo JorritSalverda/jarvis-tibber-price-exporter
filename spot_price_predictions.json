@@ -1,0 +1,161 @@
+{
+  "data": {
+    "viewer": {
+      "homes": [
+        {
+          "currentSubscription": {
+            "priceInfo": {
+              "today": [
+                {
+                  "energy": 0.5522,
+                  "tax": 0.2125,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T00:00:00.000+02:00"
+                },
+                {
+                  "energy": 0.5646,
+                  "tax": 0.2156,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T01:00:00.000+02:00"
+                },
+                {
+                  "energy": 0.577,
+                  "tax": 0.2188,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T02:00:00.000+02:00"
+                },
+                {
+                  "energy": 0.5501,
+                  "tax": 0.212,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T03:00:00.000+02:00"
+                },
+                {
+                  "energy": 0.6157,
+                  "tax": 0.2285,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T04:00:00.000+02:00"
+                },
+                {
+                  "energy": 0.6903,
+                  "tax": 0.2471,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T05:00:00.000+02:00"
+                },
+                {
+                  "energy": 0.8064,
+                  "tax": 0.276,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T06:00:00.000+02:00"
+                },
+                {
+                  "energy": 1.0104,
+                  "tax": 0.3271,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T07:00:00.000+02:00"
+                },
+                {
+                  "energy": 1.9786,
+                  "tax": 0.5692,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T08:00:00.000+02:00"
+                },
+                {
+                  "energy": 1.6523,
+                  "tax": 0.4875,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T09:00:00.000+02:00"
+                },
+                {
+                  "energy": 1.5581,
+                  "tax": 0.464,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T10:00:00.000+02:00"
+                },
+                {
+                  "energy": 1.9992,
+                  "tax": 0.5743,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T11:00:00.000+02:00"
+                },
+                {
+                  "energy": 1.8715,
+                  "tax": 0.5423,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T12:00:00.000+02:00"
+                },
+                {
+                  "energy": 2.5063,
+                  "tax": 0.701,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T13:00:00.000+02:00"
+                },
+                {
+                  "energy": 2.0304,
+                  "tax": 0.5821,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T14:00:00.000+02:00"
+                },
+                {
+                  "energy": 2.2885,
+                  "tax": 0.6466,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T15:00:00.000+02:00"
+                },
+                {
+                  "energy": 2.6469,
+                  "tax": 0.7362,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T16:00:00.000+02:00"
+                },
+                {
+                  "energy": 3.4063,
+                  "tax": 0.926,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T17:00:00.000+02:00"
+                },
+                {
+                  "energy": 3.9844,
+                  "tax": 1.0706,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T18:00:00.000+02:00"
+                },
+                {
+                  "energy": 3.9232,
+                  "tax": 1.0553,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T19:00:00.000+02:00"
+                },
+                {
+                  "energy": 3.2083,
+                  "tax": 0.8766,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T20:00:00.000+02:00"
+                },
+                {
+                  "energy": 2.681,
+                  "tax": 0.7447,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T21:00:00.000+02:00"
+                },
+                {
+                  "energy": 0.9722,
+                  "tax": 0.3176,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T22:00:00.000+02:00"
+                },
+                {
+                  "energy": 0.8522,
+                  "tax": 0.2876,
+                  "currency": "SEK",
+                  "startsAt": "2022-09-29T23:00:00.000+02:00"
+                }
+              ],
+              "tomorrow": []
+            }
+          }
+        }
+      ]
+    }
+  }
+}

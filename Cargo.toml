@@ -1,0 +1,27 @@
+[package]
+name = "jarvis-tibber-price-exporter"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4"
+ctor = "0.1"
+json_env_logger = { version = "0.1", features = ["iso-timestamps", "backtrace"] }
+log = { version = "0.4", features = ["kv_unstable_std"]}
+gcp-bigquery-client = "0.12"
+jarvis-lib = { git = "https://github.com/JorritSalverda/jarvis-lib", tag = "0.1.44" }
+kube = { version = "0.73", features = ["runtime", "derive"] }
+k8s-openapi = { version = "0.15", features = ["v1_22"] }
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+serde_yaml = "0.8"
+signal-hook = "0.3"
+tokio = { version = "1.19", features = ["macros"] }
+tokio-retry = "0.3"
+uuid = { version = "1.1", features = ["v4"] }
+
+[target.x86_64-unknown-linux-musl.dependencies]
+openssl = { version = "0.10", features = ["vendored"] }

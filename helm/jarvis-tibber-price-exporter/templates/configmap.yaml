@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "jarvis-tibber-price-exporter.fullname" . }}
+  labels:
+    {{- include "jarvis-tibber-price-exporter.labels" . | nindent 4 }}
+data:
+  bq-enable: {{ .Values.config.bqEnable | quote }}
+  bq-init: {{ .Values.config.bqInit | quote }}
+  bq-project-id: {{ .Values.config.bqProjectID | quote }}
+  bq-dataset: {{ .Values.config.bqDataset | quote }}
+  bq-table: {{ .Values.config.bqTable | quote }}
+  state-enable: {{ .Values.config.stateEnable | quote }}
+  source: {{ .Values.config.source | quote }}
+  access-token: {{ .Values.config.accessToken | quote }}
