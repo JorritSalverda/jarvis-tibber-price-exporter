@@ -42,15 +42,15 @@ impl TibberClient {
                   currentSubscription {
                     priceInfo {
                       today {
-                        total
                         energy
                         tax
+                        currency
                         startsAt
                       }
                       tomorrow {
-                        total
                         energy
                         tax
+                        currency
                         startsAt
                       }
                     }
