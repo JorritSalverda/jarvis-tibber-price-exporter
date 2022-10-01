@@ -67,6 +67,7 @@ impl TibberClient {
                 "Authorization",
                 format!("Bearer {}", self.config.access_token),
             )
+            .header("Content-type", "application/json")
             .body(request_body)
             .send()
             .await?;
