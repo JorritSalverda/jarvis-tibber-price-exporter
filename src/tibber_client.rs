@@ -36,28 +36,7 @@ impl TibberClient {
     }
 
     pub async fn get_spot_prices(&self) -> Result<Vec<SpotPrice>, Box<dyn Error>> {
-        let request_body = r#"{
-              viewer {
-                homes {
-                  currentSubscription {
-                    priceInfo {
-                      today {
-                        energy
-                        tax
-                        currency
-                        startsAt
-                      }
-                      tomorrow {
-                        energy
-                        tax
-                        currency
-                        startsAt
-                      }
-                    }
-                  }
-                }
-              }
-            }"#;
+        let request_body = r#"{"query":"{\n  viewer {\n    homes {\n      currentSubscription{\n        priceInfo{\n          today {\n            energy\n            tax\n            currency\n            startsAt\n          }\n          tomorrow {\n            energy\n            tax\n            currency\n            startsAt\n          }\n        }\n      }\n    }\n  }\n}\n"}"#;
 
         debug!("request body:\n{}", request_body);
 
@@ -67,7 +46,7 @@ impl TibberClient {
                 "Authorization",
                 format!("Bearer {}", self.config.access_token),
             )
-            .header("Content-type", "application/json")
+            .header("content-type", "application/json")
             .body(request_body)
             .send()
             .await?;
