@@ -4,10 +4,10 @@ use gcp_bigquery_client::model::table_data_insert_all_request::TableDataInsertAl
 use gcp_bigquery_client::model::table_field_schema::TableFieldSchema;
 use gcp_bigquery_client::model::table_schema::TableSchema;
 use gcp_bigquery_client::model::time_partitioning::TimePartitioning;
-use log::info;
 use std::env;
 use std::error::Error;
 use std::{thread, time};
+use tracing::info;
 
 pub struct BigqueryClientConfig {
     project_id: String,

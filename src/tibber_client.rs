@@ -1,8 +1,8 @@
 use crate::types::{SpotPrice, SpotPriceResponse};
 use chrono::Duration;
-use log::debug;
 use std::env;
 use std::error::Error;
+use tracing::debug;
 
 pub struct TibberClientConfig {
     access_token: String,

@@ -12,7 +12,10 @@ use tibber_client::TibberClient;
 
 #[tokio::main]
 pub async fn main() -> Result<(), Box<dyn Error>> {
-    json_env_logger::init();
+    tracing_subscriber::fmt()
+        .json()
+        .with_env_filter(tracing_subscriber::EnvFilter::from_default_env())
+        .init();
 
     let bigquery_client = BigqueryClient::from_env().await?;
     let tibber_client = TibberClient::from_env()?;
@@ -26,5 +29,7 @@ pub async fn main() -> Result<(), Box<dyn Error>> {
 #[cfg(test)]
 #[ctor::ctor]
 fn init() {
-    json_env_logger::init();
+    tracing_subscriber::fmt()
+        .with_env_filter(tracing_subscriber::EnvFilter::from_default_env())
+        .init();
 }

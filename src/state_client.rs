@@ -4,12 +4,12 @@ use kube::{
     api::{Api, PostParams},
     Client,
 };
-use log::info;
 use std::collections::BTreeMap;
 use std::env;
 use std::error::Error;
 use std::fs;
 use std::path::Path;
+use tracing::info;
 
 pub struct StateClientConfig {
     kube_client: Option<kube::Client>,

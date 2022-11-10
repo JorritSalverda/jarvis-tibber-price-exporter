@@ -3,11 +3,11 @@ use crate::state_client::StateClient;
 use crate::tibber_client::TibberClient;
 use crate::types::*;
 use chrono::{DateTime, Utc};
-use log::info;
 use std::env;
 use std::error::Error;
 use tokio_retry::strategy::{jitter, ExponentialBackoff};
 use tokio_retry::Retry;
+use tracing::info;
 use uuid::Uuid;
 
 pub struct ExporterServiceConfig {
